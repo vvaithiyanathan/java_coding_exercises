@@ -1,6 +1,6 @@
 package com.techreturners.exercise005;
 
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ public class Exercise005Test {
 
     private Exercise005 ex005;
 
-    @BeforeAll
+    @BeforeEach
     public void setup() {
         ex005 = new Exercise005();
     }

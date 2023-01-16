@@ -1,15 +1,17 @@
 package com.techreturners.exercise003;
 
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Exercise003Test {
 
     private Exercise003 ex003;
 
-    @BeforeAll
+    @BeforeEach
     public void setup() {
         ex003 = new Exercise003();
     }
@@ -46,7 +48,7 @@ public class Exercise003Test {
 
         String[] expected = { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
 
-        assertEquals(expected, ex003.iceCreamFlavours());
+        assertArrayEquals(expected, ex003.iceCreamFlavours());
     }
 
 
