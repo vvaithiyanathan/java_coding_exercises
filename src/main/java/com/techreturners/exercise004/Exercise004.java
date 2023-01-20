@@ -6,8 +6,9 @@ import java.time.LocalDateTime;
 public class Exercise004 {
 
     public Exercise004(LocalDate date) {
-        throw new UnsupportedOperationException("You can delete this statement and add your code here.");
-    }
+
+            throw new UnsupportedOperationException("You have not specified a date.");
+        }
 
     public Exercise004(LocalDateTime dateTime) {
         throw new UnsupportedOperationException("You can delete this statement and add your code here.");
